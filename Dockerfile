@@ -1,5 +1,5 @@
 
-FROM  ubuntu:  latest 
+FROM  Ubuntu 
 
 RUN apt-get update && apt-get install -y \
     python3.10 \ 
