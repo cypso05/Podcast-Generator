@@ -1,5 +1,5 @@
 # a docker file controls how your cloud server creates a virtual machine in the cloud. below are steps for making virtual machine 
-FROM  ubuntu : latest
+FROM  ubuntu as latest 
 
 RUN apt-get update && apt-get install -y \
     python3.10 \ 
