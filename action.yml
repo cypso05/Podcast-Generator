@@ -11,8 +11,8 @@ inputs:
   email: 
     description: The commiter's email address
     required: true
-    default: ${{girhub.actor }}@localhoast
+    default: ${{github.actor }}@localhoast
   name:
     description: The commiter's name
     required: true
-    default: ${{girhub.actor }}
+    default: ${{github.actor }}
