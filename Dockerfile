@@ -20,14 +20,7 @@ RUN setx GO111MODULE auto
 RUN powershell -File .\scripts\make.ps1 -Binary
 RUN dir C:\gopath\src\github.com\docker\cli\build\docker.exe
 
-RUN apt-get update && apt-get install -y \
-    python3.10 \ 
-    python3-pip \
-    git
 
-RUN pip3 imstall PyYAML
-
-COPY feed.py /usr/bin/feed.py 
 
 COPY entrypoint.sh /entrypoint.sh
 
