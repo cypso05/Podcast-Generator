@@ -20,8 +20,3 @@ RUN setx GO111MODULE auto
 RUN powershell -File .\scripts\make.ps1 -Binary
 RUN dir C:\gopath\src\github.com\docker\cli\build\docker.exe
 
-
-
-COPY entrypoint.sh /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
